@@ -16,12 +16,13 @@ git clone https://github.com/nanasess/docker-ec-cube3.git
 ## Example Usage
 
 ```zsh
-cd docker-ec-cube3¯
+cd docker-ec-cube3
 docker-compose up -d
 ```
 
 Let's Access in Browser
-  * ex)```http://localhost:8080/admin```
+  * Front End) ```http://localhost:8080```
+  * Back End) ```http://localhost:8080/admin```
     * ID: admin / PW: password
   * MailCatcher) ```http://localhost:1080/```
 
