@@ -7,7 +7,7 @@ ENV ECCUBE_PATH /var/www
 
 ARG DBTYPE=pgsql
 ARG ECCUBE_REPOS=https://github.com/EC-CUBE/ec-cube.git
-ARG ECCUBE_BRANCH=master
+ARG ECCUBE_BRANCH=3.0
 
 RUN useradd -ms /bin/bash ${PGUSER}
 
@@ -16,7 +16,7 @@ COPY config/php.ini ${PHP_INI_DIR}/
 ADD wait-for-${DBTYPE}.sh /wait-for-db.sh
 RUN chmod +x /wait-for-db.sh
 
-ENTRYPOINT /wait-for-db.sh
+ENTRYPOINT ["/wait-for-db.sh"]
 
 ## Clone EC-CUBE3
 RUN cd /var && \
