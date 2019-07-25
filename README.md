@@ -1,5 +1,4 @@
 Dockerfile for EC-CUBE 3.x with docker-compose
-
 ====
 
 It's fork from https://github.com/nanasess/docker-ec-cube3
