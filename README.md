@@ -1,5 +1,10 @@
 Dockerfile for EC-CUBE 3.x with docker-compose
+
 ====
+
+It's fork from https://github.com/nanasess/docker-ec-cube3
+
+Windows User Notice: please change `End of Line Sequence` of  `wait-for-pgsql.sh` and `wait-for-mysql.sh`  to `LF` .
 
 ## What's this
 
@@ -10,7 +15,7 @@ Development environment for [EC-CUBE 3.x](https://github.com/EC-CUBE/ec-cube).
 * git clone
 
 ```zsh
-git clone https://github.com/nanasess/docker-ec-cube3.git
+git clone https://github.com/codeyu/docker-ec-cube3.git
 ```
 
 ## Example Usage
